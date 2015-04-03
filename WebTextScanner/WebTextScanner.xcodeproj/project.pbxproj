@@ -14,6 +14,8 @@
 		EB3A4F5A1ACD7AC700720862 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3A4F591ACD7AC700720862 /* Images.xcassets */; };
 		EB3A4F5D1ACD7AC700720862 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB3A4F5B1ACD7AC700720862 /* LaunchScreen.xib */; };
 		EB3A4F691ACD7AC700720862 /* WebTextScannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A4F681ACD7AC700720862 /* WebTextScannerTests.m */; };
+		EB3A51271ACD90D600720862 /* libHTMLReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A510B1ACD8DB200720862 /* libHTMLReader.a */; };
+		EB3A51281ACD90DE00720862 /* HTMLReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A50FD1ACD8DB200720862 /* HTMLReader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +25,62 @@
 			proxyType = 1;
 			remoteGlobalIDString = EB3A4F481ACD7AC600720862;
 			remoteInfo = WebTextScanner;
+		};
+		EB3A50FC1ACD8DB200720862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1C6C1F4C1A179BF600236076;
+			remoteInfo = "HTMLReader iOS";
+		};
+		EB3A50FE1ACD8DB200720862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1C9C3ECA176BC53900E982C9;
+			remoteInfo = "Tests on iOS";
+		};
+		EB3A51001ACD8DB200720862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1C88293B18369DD70051653C;
+			remoteInfo = "HTMLReader OS X";
+		};
+		EB3A51021ACD8DB200720862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1C88295018369DD70051653C;
+			remoteInfo = "Tests on OS X";
+		};
+		EB3A51041ACD8DB200720862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CD5250918DC83E6003F46A3;
+			remoteInfo = Benchmarker;
+		};
+		EB3A51061ACD8DB200720862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1C9513C91A80971100BB2CC9;
+			remoteInfo = "Encoding Labeler";
+		};
+		EB3A51081ACD8DB200720862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1C9A2A071836FEAE0059FE17;
+			remoteInfo = "Entity Fetcher";
+		};
+		EB3A510A1ACD8DB200720862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1C9C3EB9176BC53900E982C9;
+			remoteInfo = "HTMLReader iOS Static Library";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +98,7 @@
 		EB3A4F621ACD7AC700720862 /* WebTextScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebTextScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3A4F671ACD7AC700720862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB3A4F681ACD7AC700720862 /* WebTextScannerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebTextScannerTests.m; sourceTree = "<group>"; };
+		EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HTMLReader.xcodeproj; path = HTMLReader/HTMLReader.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB3A51281ACD90DE00720862 /* HTMLReader.framework in Frameworks */,
+				EB3A51271ACD90D600720862 /* libHTMLReader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +124,7 @@
 		EB3A4F401ACD7AC600720862 = {
 			isa = PBXGroup;
 			children = (
+				EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */,
 				EB3A4F4B1ACD7AC600720862 /* WebTextScanner */,
 				EB3A4F651ACD7AC700720862 /* WebTextScannerTests */,
 				EB3A4F4A1ACD7AC600720862 /* Products */,
@@ -117,6 +179,21 @@
 				EB3A4F671ACD7AC700720862 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB3A50F21ACD8DB200720862 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB3A50FD1ACD8DB200720862 /* HTMLReader.framework */,
+				EB3A50FF1ACD8DB200720862 /* Tests on iOS.xctest */,
+				EB3A51011ACD8DB200720862 /* HTMLReader.framework */,
+				EB3A51031ACD8DB200720862 /* Tests on OS X.xctest */,
+				EB3A51051ACD8DB200720862 /* Benchmarker */,
+				EB3A51071ACD8DB200720862 /* Encoding Labeler */,
+				EB3A51091ACD8DB200720862 /* Entity Fetcher */,
+				EB3A510B1ACD8DB200720862 /* libHTMLReader.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +263,12 @@
 			mainGroup = EB3A4F401ACD7AC600720862;
 			productRefGroup = EB3A4F4A1ACD7AC600720862 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EB3A50F21ACD8DB200720862 /* Products */;
+					ProjectRef = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EB3A4F481ACD7AC600720862 /* WebTextScanner */,
@@ -193,6 +276,65 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EB3A50FD1ACD8DB200720862 /* HTMLReader.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HTMLReader.framework;
+			remoteRef = EB3A50FC1ACD8DB200720862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB3A50FF1ACD8DB200720862 /* Tests on iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Tests on iOS.xctest";
+			remoteRef = EB3A50FE1ACD8DB200720862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB3A51011ACD8DB200720862 /* HTMLReader.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HTMLReader.framework;
+			remoteRef = EB3A51001ACD8DB200720862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB3A51031ACD8DB200720862 /* Tests on OS X.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Tests on OS X.xctest";
+			remoteRef = EB3A51021ACD8DB200720862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB3A51051ACD8DB200720862 /* Benchmarker */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = Benchmarker;
+			remoteRef = EB3A51041ACD8DB200720862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB3A51071ACD8DB200720862 /* Encoding Labeler */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "Encoding Labeler";
+			remoteRef = EB3A51061ACD8DB200720862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB3A51091ACD8DB200720862 /* Entity Fetcher */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "Entity Fetcher";
+			remoteRef = EB3A51081ACD8DB200720862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB3A510B1ACD8DB200720862 /* libHTMLReader.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libHTMLReader.a;
+			remoteRef = EB3A510A1ACD8DB200720862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EB3A4F471ACD7AC600720862 /* Resources */ = {
@@ -346,6 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WebTextScanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,6 +499,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WebTextScanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -414,6 +558,7 @@
 				EB3A4F6E1ACD7AC700720862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB3A4F6F1ACD7AC700720862 /* Build configuration list for PBXNativeTarget "WebTextScannerTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +567,7 @@
 				EB3A4F711ACD7AC700720862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
