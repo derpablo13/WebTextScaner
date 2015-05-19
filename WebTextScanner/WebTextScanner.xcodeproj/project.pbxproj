@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB29DA691AD7CD280024A48E /* WTURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB29DA681AD7CD280024A48E /* WTURLSessionManager.m */; };
 		EB3A4F4F1ACD7AC700720862 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A4F4E1ACD7AC700720862 /* main.m */; };
 		EB3A4F521ACD7AC700720862 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A4F511ACD7AC700720862 /* AppDelegate.m */; };
 		EB3A4F551ACD7AC700720862 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A4F541ACD7AC700720862 /* ViewController.m */; };
@@ -14,8 +15,12 @@
 		EB3A4F5A1ACD7AC700720862 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3A4F591ACD7AC700720862 /* Images.xcassets */; };
 		EB3A4F5D1ACD7AC700720862 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB3A4F5B1ACD7AC700720862 /* LaunchScreen.xib */; };
 		EB3A4F691ACD7AC700720862 /* WebTextScannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A4F681ACD7AC700720862 /* WebTextScannerTests.m */; };
-		EB3A51271ACD90D600720862 /* libHTMLReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A510B1ACD8DB200720862 /* libHTMLReader.a */; };
-		EB3A51281ACD90DE00720862 /* HTMLReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A50FD1ACD8DB200720862 /* HTMLReader.framework */; };
+		EBAD2BDE1ADEC3E800908C3C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAD2BDC1ADEC3E800908C3C /* libxml2.dylib */; };
+		EBB4A9391ADFC92200F9FEA1 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB4A9351ADFC92200F9FEA1 /* HTMLNode.m */; };
+		EBB4A93A1ADFC92200F9FEA1 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB4A9371ADFC92200F9FEA1 /* HTMLParser.m */; };
+		EBB4A93F1AE0150000F9FEA1 /* WTURLFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB4A93E1AE0150000F9FEA1 /* WTURLFilter.m */; };
+		EBE311F71ACEBD27006D95C5 /* WTNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE311F61ACEBD27006D95C5 /* WTNode.m */; };
+		EBE311FB1ACEBD33006D95C5 /* WTSearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE311FA1ACEBD33006D95C5 /* WTSearchManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,65 +31,11 @@
 			remoteGlobalIDString = EB3A4F481ACD7AC600720862;
 			remoteInfo = WebTextScanner;
 		};
-		EB3A50FC1ACD8DB200720862 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1C6C1F4C1A179BF600236076;
-			remoteInfo = "HTMLReader iOS";
-		};
-		EB3A50FE1ACD8DB200720862 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1C9C3ECA176BC53900E982C9;
-			remoteInfo = "Tests on iOS";
-		};
-		EB3A51001ACD8DB200720862 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1C88293B18369DD70051653C;
-			remoteInfo = "HTMLReader OS X";
-		};
-		EB3A51021ACD8DB200720862 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1C88295018369DD70051653C;
-			remoteInfo = "Tests on OS X";
-		};
-		EB3A51041ACD8DB200720862 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1CD5250918DC83E6003F46A3;
-			remoteInfo = Benchmarker;
-		};
-		EB3A51061ACD8DB200720862 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1C9513C91A80971100BB2CC9;
-			remoteInfo = "Encoding Labeler";
-		};
-		EB3A51081ACD8DB200720862 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1C9A2A071836FEAE0059FE17;
-			remoteInfo = "Entity Fetcher";
-		};
-		EB3A510A1ACD8DB200720862 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1C9C3EB9176BC53900E982C9;
-			remoteInfo = "HTMLReader iOS Static Library";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB29DA671AD7CD280024A48E /* WTURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTURLSessionManager.h; sourceTree = "<group>"; };
+		EB29DA681AD7CD280024A48E /* WTURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTURLSessionManager.m; sourceTree = "<group>"; };
 		EB3A4F491ACD7AC600720862 /* WebTextScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebTextScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3A4F4D1ACD7AC700720862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB3A4F4E1ACD7AC700720862 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -98,7 +49,17 @@
 		EB3A4F621ACD7AC700720862 /* WebTextScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebTextScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3A4F671ACD7AC700720862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB3A4F681ACD7AC700720862 /* WebTextScannerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebTextScannerTests.m; sourceTree = "<group>"; };
-		EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HTMLReader.xcodeproj; path = HTMLReader/HTMLReader.xcodeproj; sourceTree = "<group>"; };
+		EBAD2BDC1ADEC3E800908C3C /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		EBB4A9341ADFC92200F9FEA1 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		EBB4A9351ADFC92200F9FEA1 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		EBB4A9361ADFC92200F9FEA1 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		EBB4A9371ADFC92200F9FEA1 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		EBB4A93D1AE0150000F9FEA1 /* WTURLFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTURLFilter.h; sourceTree = "<group>"; };
+		EBB4A93E1AE0150000F9FEA1 /* WTURLFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTURLFilter.m; sourceTree = "<group>"; };
+		EBE311F51ACEBD27006D95C5 /* WTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTNode.h; sourceTree = "<group>"; };
+		EBE311F61ACEBD27006D95C5 /* WTNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTNode.m; sourceTree = "<group>"; };
+		EBE311F91ACEBD33006D95C5 /* WTSearchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSearchManager.h; sourceTree = "<group>"; };
+		EBE311FA1ACEBD33006D95C5 /* WTSearchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSearchManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB3A51281ACD90DE00720862 /* HTMLReader.framework in Frameworks */,
-				EB3A51271ACD90D600720862 /* libHTMLReader.a in Frameworks */,
+				EBAD2BDE1ADEC3E800908C3C /* libxml2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,10 +81,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB29DA5E1AD7CCFF0024A48E /* WTURLSessionManager */ = {
+			isa = PBXGroup;
+			children = (
+				EB29DA671AD7CD280024A48E /* WTURLSessionManager.h */,
+				EB29DA681AD7CD280024A48E /* WTURLSessionManager.m */,
+			);
+			path = WTURLSessionManager;
+			sourceTree = "<group>";
+		};
 		EB3A4F401ACD7AC600720862 = {
 			isa = PBXGroup;
 			children = (
-				EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */,
+				EBAD2BDC1ADEC3E800908C3C /* libxml2.dylib */,
+				EBB4A9331ADFC92200F9FEA1 /* Objective-C-HMTL-Parser */,
 				EB3A4F4B1ACD7AC600720862 /* WebTextScanner */,
 				EB3A4F651ACD7AC700720862 /* WebTextScannerTests */,
 				EB3A4F4A1ACD7AC600720862 /* Products */,
@@ -147,6 +117,10 @@
 				EB3A4F511ACD7AC700720862 /* AppDelegate.m */,
 				EB3A4F531ACD7AC700720862 /* ViewController.h */,
 				EB3A4F541ACD7AC700720862 /* ViewController.m */,
+				EBE311F41ACEBD1B006D95C5 /* WTNode */,
+				EBB4A93C1AE014F100F9FEA1 /* WTURLFilter */,
+				EBE311F81ACEBD33006D95C5 /* WTSearchManager */,
+				EB29DA5E1AD7CCFF0024A48E /* WTURLSessionManager */,
 				EB3A4F561ACD7AC700720862 /* Main.storyboard */,
 				EB3A4F591ACD7AC700720862 /* Images.xcassets */,
 				EB3A4F5B1ACD7AC700720862 /* LaunchScreen.xib */,
@@ -181,19 +155,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EB3A50F21ACD8DB200720862 /* Products */ = {
+		EBB4A9331ADFC92200F9FEA1 /* Objective-C-HMTL-Parser */ = {
 			isa = PBXGroup;
 			children = (
-				EB3A50FD1ACD8DB200720862 /* HTMLReader.framework */,
-				EB3A50FF1ACD8DB200720862 /* Tests on iOS.xctest */,
-				EB3A51011ACD8DB200720862 /* HTMLReader.framework */,
-				EB3A51031ACD8DB200720862 /* Tests on OS X.xctest */,
-				EB3A51051ACD8DB200720862 /* Benchmarker */,
-				EB3A51071ACD8DB200720862 /* Encoding Labeler */,
-				EB3A51091ACD8DB200720862 /* Entity Fetcher */,
-				EB3A510B1ACD8DB200720862 /* libHTMLReader.a */,
+				EBB4A9341ADFC92200F9FEA1 /* HTMLNode.h */,
+				EBB4A9351ADFC92200F9FEA1 /* HTMLNode.m */,
+				EBB4A9361ADFC92200F9FEA1 /* HTMLParser.h */,
+				EBB4A9371ADFC92200F9FEA1 /* HTMLParser.m */,
 			);
-			name = Products;
+			path = "Objective-C-HMTL-Parser";
+			sourceTree = "<group>";
+		};
+		EBB4A93C1AE014F100F9FEA1 /* WTURLFilter */ = {
+			isa = PBXGroup;
+			children = (
+				EBB4A93D1AE0150000F9FEA1 /* WTURLFilter.h */,
+				EBB4A93E1AE0150000F9FEA1 /* WTURLFilter.m */,
+			);
+			path = WTURLFilter;
+			sourceTree = "<group>";
+		};
+		EBE311F41ACEBD1B006D95C5 /* WTNode */ = {
+			isa = PBXGroup;
+			children = (
+				EBE311F51ACEBD27006D95C5 /* WTNode.h */,
+				EBE311F61ACEBD27006D95C5 /* WTNode.m */,
+			);
+			path = WTNode;
+			sourceTree = "<group>";
+		};
+		EBE311F81ACEBD33006D95C5 /* WTSearchManager */ = {
+			isa = PBXGroup;
+			children = (
+				EBE311F91ACEBD33006D95C5 /* WTSearchManager.h */,
+				EBE311FA1ACEBD33006D95C5 /* WTSearchManager.m */,
+			);
+			path = WTSearchManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +237,7 @@
 		EB3A4F411ACD7AC600720862 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WT;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = parak;
 				TargetAttributes = {
@@ -263,12 +261,6 @@
 			mainGroup = EB3A4F401ACD7AC600720862;
 			productRefGroup = EB3A4F4A1ACD7AC600720862 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = EB3A50F21ACD8DB200720862 /* Products */;
-					ProjectRef = EB3A50F11ACD8DB200720862 /* HTMLReader.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				EB3A4F481ACD7AC600720862 /* WebTextScanner */,
@@ -276,65 +268,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		EB3A50FD1ACD8DB200720862 /* HTMLReader.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = HTMLReader.framework;
-			remoteRef = EB3A50FC1ACD8DB200720862 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EB3A50FF1ACD8DB200720862 /* Tests on iOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Tests on iOS.xctest";
-			remoteRef = EB3A50FE1ACD8DB200720862 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EB3A51011ACD8DB200720862 /* HTMLReader.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = HTMLReader.framework;
-			remoteRef = EB3A51001ACD8DB200720862 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EB3A51031ACD8DB200720862 /* Tests on OS X.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Tests on OS X.xctest";
-			remoteRef = EB3A51021ACD8DB200720862 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EB3A51051ACD8DB200720862 /* Benchmarker */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = Benchmarker;
-			remoteRef = EB3A51041ACD8DB200720862 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EB3A51071ACD8DB200720862 /* Encoding Labeler */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = "Encoding Labeler";
-			remoteRef = EB3A51061ACD8DB200720862 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EB3A51091ACD8DB200720862 /* Entity Fetcher */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = "Entity Fetcher";
-			remoteRef = EB3A51081ACD8DB200720862 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EB3A510B1ACD8DB200720862 /* libHTMLReader.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libHTMLReader.a;
-			remoteRef = EB3A510A1ACD8DB200720862 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EB3A4F471ACD7AC600720862 /* Resources */ = {
@@ -361,9 +294,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB4A9391ADFC92200F9FEA1 /* HTMLNode.m in Sources */,
+				EBB4A93A1ADFC92200F9FEA1 /* HTMLParser.m in Sources */,
 				EB3A4F551ACD7AC700720862 /* ViewController.m in Sources */,
+				EB29DA691AD7CD280024A48E /* WTURLSessionManager.m in Sources */,
 				EB3A4F521ACD7AC700720862 /* AppDelegate.m in Sources */,
+				EBE311FB1ACEBD33006D95C5 /* WTSearchManager.m in Sources */,
+				EBB4A93F1AE0150000F9FEA1 /* WTURLFilter.m in Sources */,
 				EB3A4F4F1ACD7AC700720862 /* main.m in Sources */,
+				EBE311F71ACEBD27006D95C5 /* WTNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +426,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = WebTextScanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -498,6 +442,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = WebTextScanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
